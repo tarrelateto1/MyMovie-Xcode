@@ -16,6 +16,8 @@
 		576B50D623FFC4470023C2AF /* MyMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B50D523FFC4470023C2AF /* MyMovieTests.swift */; };
 		576B50E123FFC4470023C2AF /* MyMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B50E023FFC4470023C2AF /* MyMovieUITests.swift */; };
 		5770455D2402B1EC00E736CC /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770455C2402B1EC00E736CC /* TableCell.swift */; };
+		5771B3842404DB0700FEA114 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5771B3832404DB0700FEA114 /* Interactor.swift */; };
+		5771B3862404DB1000FEA114 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5771B3852404DB1000FEA114 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		576B50E023FFC4470023C2AF /* MyMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieUITests.swift; sourceTree = "<group>"; };
 		576B50E223FFC4470023C2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5770455C2402B1EC00E736CC /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		5771B3832404DB0700FEA114 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		5771B3852404DB1000FEA114 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +105,12 @@
 		576B50BD23FFC4400023C2AF /* MyMovie */ = {
 			isa = PBXGroup;
 			children = (
+				5771B3822404DAC000FEA114 /* app-module */,
 				5781772A2402552A00F36145 /* app-setting */,
 				57817729240254F700F36145 /* app-ui */,
 				57817728240254DA00F36145 /* app-icons */,
 				576B50C023FFC4400023C2AF /* SceneDelegate.swift */,
-				576B50C223FFC4400023C2AF /* ViewController.swift */,
 				576B50CC23FFC4470023C2AF /* Info.plist */,
-				5770455C2402B1EC00E736CC /* TableCell.swift */,
 			);
 			path = MyMovie;
 			sourceTree = "<group>";
@@ -128,6 +131,17 @@
 				576B50E223FFC4470023C2AF /* Info.plist */,
 			);
 			path = MyMovieUITests;
+			sourceTree = "<group>";
+		};
+		5771B3822404DAC000FEA114 /* app-module */ = {
+			isa = PBXGroup;
+			children = (
+				5770455C2402B1EC00E736CC /* TableCell.swift */,
+				576B50C223FFC4400023C2AF /* ViewController.swift */,
+				5771B3832404DB0700FEA114 /* Interactor.swift */,
+				5771B3852404DB1000FEA114 /* Presenter.swift */,
+			);
+			path = "app-module";
 			sourceTree = "<group>";
 		};
 		57817728240254DA00F36145 /* app-icons */ = {
@@ -286,8 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5771B3862404DB1000FEA114 /* Presenter.swift in Sources */,
 				576B50C323FFC4400023C2AF /* ViewController.swift in Sources */,
 				576B50BF23FFC4400023C2AF /* AppDelegate.swift in Sources */,
+				5771B3842404DB0700FEA114 /* Interactor.swift in Sources */,
 				5770455D2402B1EC00E736CC /* TableCell.swift in Sources */,
 				576B50C123FFC4400023C2AF /* SceneDelegate.swift in Sources */,
 			);

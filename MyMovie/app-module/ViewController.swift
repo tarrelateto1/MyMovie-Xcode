@@ -7,15 +7,39 @@
 //
 
 import UIKit
+protocol ViewProtocol {
+//    func SetText(text:String)
+    func showText(text:String)
+}
+class ViewController: UIViewController,ViewProtocol {
+    func showText(text: String) {
+        helloLabel.text = text
+    }
+    
 
-class ViewController: UIViewController {
+    
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var helloLabel: UILabel!
     
     let animalArray = ["Cat","Dog","Snake","Spider","Hourse","Mouse"]
+    var presenter:PresenterProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setup()
+//        helloLabel.text = "tar"
+        presenter?.loadText()
+    }
+    func setup(){
+        let view = self
+        let interactor = Interactor()
+        let presenter = Presenter()
+        view.presenter = presenter
+        presenter.interactor = interactor
+        presenter.view = view
+        interactor.presenter = presenter
     }
 
 

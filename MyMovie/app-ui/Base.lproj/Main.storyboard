@@ -66,6 +66,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="helloLabel" destination="iQb-kS-q5T" id="FRw-eR-H0X"/>
                         <outlet property="tableView" destination="fGA-1g-w7I" id="YRD-WD-bst"/>
                     </connections>
                 </viewController>
