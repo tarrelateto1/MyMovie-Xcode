@@ -10,14 +10,13 @@ import UIKit
 protocol ViewProtocol {
 //    func SetText(text:String)
     func showText(text:String)
+    func showFruits(with fruits: [Fruit])
 }
 class ViewController: UIViewController,ViewProtocol {
-    func showText(text: String) {
-        helloLabel.text = text
-    }
-    
 
-    
+
+    var fruitList = [Fruit]()
+
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var helloLabel: UILabel!
@@ -31,6 +30,8 @@ class ViewController: UIViewController,ViewProtocol {
         setup()
 //        helloLabel.text = "tar"
         presenter?.loadText()
+        presenter?.viewDidLoad()
+        
     }
     func setup(){
         let view = self
@@ -41,19 +42,28 @@ class ViewController: UIViewController,ViewProtocol {
         presenter.view = view
         interactor.presenter = presenter
     }
-
+    func showFruits(with fruits: [Fruit]) {
+        fruitList = fruits
+        tableView.reloadData()
+    }
+    
+    func showText(text: String) {
+        helloLabel.text = text
+    }
+    
 
 }
 
 extension ViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animalArray.count
+        return fruitList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableCell
-        cell.title!.text = animalArray[indexPath.row]
-        cell.detail!.text = animalArray[indexPath.row]
+        let fruit = fruitList[indexPath.row]
+        cell.title!.text = fruit.name
+        cell.detail!.text = fruit.vitamin
         
         return cell
     }

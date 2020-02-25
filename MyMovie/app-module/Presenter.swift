@@ -9,9 +9,14 @@ protocol PresenterProtocol{
     var view: ViewProtocol? {get set}
     var interactor: InputInteractor? {get set}
     func loadText()
+    func viewDidLoad()
 
 }
 class Presenter:PresenterProtocol {
+    func viewDidLoad() {
+        interactor?.getFruitList()
+    }
+    
     var view: ViewProtocol?
     var interactor:InputInteractor?
     
@@ -21,6 +26,11 @@ class Presenter:PresenterProtocol {
 }
 
 extension Presenter:OutputInteractor{
+    func FruitListDidFetch(fruitList: [Fruit]) {
+        view?.showFruits(with: fruitList)
+
+    }
+    
     func ViewDidFetch(text:String){
         view?.showText(text: text)
     }

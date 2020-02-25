@@ -18,6 +18,8 @@
 		5770455D2402B1EC00E736CC /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770455C2402B1EC00E736CC /* TableCell.swift */; };
 		5771B3842404DB0700FEA114 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5771B3832404DB0700FEA114 /* Interactor.swift */; };
 		5771B3862404DB1000FEA114 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5771B3852404DB1000FEA114 /* Presenter.swift */; };
+		5771B3882404F11800FEA114 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5771B3872404F11800FEA114 /* Common.swift */; };
+		5771B38A2404F13900FEA114 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5771B3892404F13900FEA114 /* Fruit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		5770455C2402B1EC00E736CC /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		5771B3832404DB0700FEA114 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		5771B3852404DB1000FEA114 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		5771B3872404F11800FEA114 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		5771B3892404F13900FEA114 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				576B50C223FFC4400023C2AF /* ViewController.swift */,
 				5771B3832404DB0700FEA114 /* Interactor.swift */,
 				5771B3852404DB1000FEA114 /* Presenter.swift */,
+				5771B3872404F11800FEA114 /* Common.swift */,
+				5771B3892404F13900FEA114 /* Fruit.swift */,
 			);
 			path = "app-module";
 			sourceTree = "<group>";
@@ -300,12 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5771B38A2404F13900FEA114 /* Fruit.swift in Sources */,
 				5771B3862404DB1000FEA114 /* Presenter.swift in Sources */,
 				576B50C323FFC4400023C2AF /* ViewController.swift in Sources */,
 				576B50BF23FFC4400023C2AF /* AppDelegate.swift in Sources */,
 				5771B3842404DB0700FEA114 /* Interactor.swift in Sources */,
 				5770455D2402B1EC00E736CC /* TableCell.swift in Sources */,
 				576B50C123FFC4400023C2AF /* SceneDelegate.swift in Sources */,
+				5771B3882404F11800FEA114 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
