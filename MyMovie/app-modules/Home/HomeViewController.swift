@@ -19,6 +19,12 @@ protocol HomeDisplayLogic: class
 
 class HomeViewController: UIViewController, HomeDisplayLogic
 {
+    //varaible
+    @IBOutlet weak var tableView: UITableView!
+       
+       let animalArray = ["Cat","Dog","Snake","Spider","Hourse","Mouse"]
+    
+    //
   var interactor: HomeBusinessLogic?
   var router: (NSObjectProtocol & HomeRoutingLogic & HomeDataPassing)?
 
@@ -86,4 +92,20 @@ class HomeViewController: UIViewController, HomeDisplayLogic
   {
     //nameTextField.text = viewModel.name
   }
+}
+
+extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return animalArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableCell
+        cell.title!.text = animalArray[indexPath.row]
+        cell.detail!.text = animalArray[indexPath.row]
+        
+        return cell
+    }
+    
+    
 }
