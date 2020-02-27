@@ -21,6 +21,12 @@
 		57B0FDEE2406F32D0062D184 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDE82406F32D0062D184 /* HomeModels.swift */; };
 		57B0FDEF2406F32D0062D184 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDE92406F32D0062D184 /* HomeViewController.swift */; };
 		57B0FDF02406F32D0062D184 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDEA2406F32D0062D184 /* HomeInteractor.swift */; };
+		57B0FDF92406F5880062D184 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDF32406F5880062D184 /* ListPresenter.swift */; };
+		57B0FDFA2406F5880062D184 /* ListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDF42406F5880062D184 /* ListWorker.swift */; };
+		57B0FDFB2406F5880062D184 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDF52406F5880062D184 /* ListRouter.swift */; };
+		57B0FDFC2406F5880062D184 /* ListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDF62406F5880062D184 /* ListModels.swift */; };
+		57B0FDFD2406F5880062D184 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDF72406F5880062D184 /* ListViewController.swift */; };
+		57B0FDFE2406F5880062D184 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0FDF82406F5880062D184 /* ListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,12 @@
 		57B0FDE82406F32D0062D184 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
 		57B0FDE92406F32D0062D184 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		57B0FDEA2406F32D0062D184 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		57B0FDF32406F5880062D184 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		57B0FDF42406F5880062D184 /* ListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorker.swift; sourceTree = "<group>"; };
+		57B0FDF52406F5880062D184 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		57B0FDF62406F5880062D184 /* ListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModels.swift; sourceTree = "<group>"; };
+		57B0FDF72406F5880062D184 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		57B0FDF82406F5880062D184 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +179,7 @@
 		57B0FDE32406F2F40062D184 /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
+				57B0FDF22406F56F0062D184 /* List */,
 				57B0FDE42406F3160062D184 /* Home */,
 			);
 			path = "app-modules";
@@ -192,6 +205,19 @@
 				5770455C2402B1EC00E736CC /* TableCell.swift */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		57B0FDF22406F56F0062D184 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				57B0FDF32406F5880062D184 /* ListPresenter.swift */,
+				57B0FDF42406F5880062D184 /* ListWorker.swift */,
+				57B0FDF52406F5880062D184 /* ListRouter.swift */,
+				57B0FDF62406F5880062D184 /* ListModels.swift */,
+				57B0FDF72406F5880062D184 /* ListViewController.swift */,
+				57B0FDF82406F5880062D184 /* ListInteractor.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,14 +351,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B0FDFE2406F5880062D184 /* ListInteractor.swift in Sources */,
+				57B0FDFB2406F5880062D184 /* ListRouter.swift in Sources */,
+				57B0FDF92406F5880062D184 /* ListPresenter.swift in Sources */,
 				57B0FDEE2406F32D0062D184 /* HomeModels.swift in Sources */,
+				57B0FDFC2406F5880062D184 /* ListModels.swift in Sources */,
 				576B50BF23FFC4400023C2AF /* AppDelegate.swift in Sources */,
 				57B0FDF02406F32D0062D184 /* HomeInteractor.swift in Sources */,
+				57B0FDFD2406F5880062D184 /* ListViewController.swift in Sources */,
 				57B0FDED2406F32D0062D184 /* HomeRouter.swift in Sources */,
 				5770455D2402B1EC00E736CC /* TableCell.swift in Sources */,
 				57B0FDEF2406F32D0062D184 /* HomeViewController.swift in Sources */,
 				57B0FDEB2406F32D0062D184 /* HomePresenter.swift in Sources */,
 				57B0FDEC2406F32D0062D184 /* HomeWorker.swift in Sources */,
+				57B0FDFA2406F5880062D184 /* ListWorker.swift in Sources */,
 				576B50C123FFC4400023C2AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

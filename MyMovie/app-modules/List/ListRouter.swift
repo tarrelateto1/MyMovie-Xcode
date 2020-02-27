@@ -1,5 +1,5 @@
 //
-//  HomeRouter.swift
+//  ListRouter.swift
 //  MyMovie
 //
 //  Created by tar on 27/2/2563 BE.
@@ -12,48 +12,48 @@
 
 import UIKit
 
-@objc protocol HomeRoutingLogic
+@objc protocol ListRoutingLogic
 {
   //func routeToSomewhere(segue: UIStoryboardSegue?)
 }
 
-protocol HomeDataPassing
+protocol ListDataPassing
 {
-  var dataStore: HomeDataStore? { get }
+  var dataStore: ListDataStore? { get }
 }
 
-class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing
+class ListRouter: NSObject, ListRoutingLogic, ListDataPassing
 {
-  weak var viewController: HomeViewController?
-  var dataStore: HomeDataStore?
+  weak var viewController: ListViewController?
+  var dataStore: ListDataStore?
   
   // MARK: Routing
   
-  func routeToList(segue: UIStoryboardSegue?)
-  {
-    if let segue = segue {
+  //func routeToSomewhere(segue: UIStoryboardSegue?)
+  //{
+  //  if let segue = segue {
   //    let destinationVC = segue.destination as! SomewhereViewController
   //    var destinationDS = destinationVC.router!.dataStore!
   //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    } else {
-      let storyboard = UIStoryboard(name: "Main", bundle: nil)
-      let destinationVC = storyboard.instantiateViewController(withIdentifier: "ListViewController") as! ListViewController
+  //  } else {
+  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
   //    var destinationDS = destinationVC.router!.dataStore!
   //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
   //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-    }
-  }
+  //  }
+  //}
 
   // MARK: Navigation
   
-  func navigateToSomewhere(source: HomeViewController, destination: ListViewController)
-  {
-    source.show(destination, sender: nil)
-  }
+  //func navigateToSomewhere(source: ListViewController, destination: SomewhereViewController)
+  //{
+  //  source.show(destination, sender: nil)
+  //}
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: HomeDataStore, destination: inout SomewhereDataStore)
+  //func passDataToSomewhere(source: ListDataStore, destination: inout SomewhereDataStore)
   //{
   //  destination.name = source.name
   //}
