@@ -14,7 +14,7 @@ import UIKit
 
 @objc protocol HomeRoutingLogic
 {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+  func routeToList(segue: UIStoryboardSegue?)
 }
 
 protocol HomeDataPassing
@@ -32,29 +32,29 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing
   func routeToList(segue: UIStoryboardSegue?)
   {
     if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
+      let destinationVC = segue.destination as! ListViewController
+      var destinationDS = destinationVC.router!.dataStore!
+      passDataToList(source: dataStore!, destination: &destinationDS)
     } else {
       let storyboard = UIStoryboard(name: "Main", bundle: nil)
       let destinationVC = storyboard.instantiateViewController(withIdentifier: "ListViewController") as! ListViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
+      var destinationDS = destinationVC.router!.dataStore!
+      passDataToList(source: dataStore!, destination: &destinationDS)
+      navigateToList(source: viewController!, destination: destinationVC)
     }
   }
 
   // MARK: Navigation
   
-  func navigateToSomewhere(source: HomeViewController, destination: ListViewController)
+  func navigateToList(source: HomeViewController, destination: ListViewController)
   {
     source.show(destination, sender: nil)
   }
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: HomeDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+  func passDataToList(source: HomeDataStore, destination: inout ListDataStore)
+  {
+    destination.name = source.name
+  }
 }

@@ -15,10 +15,14 @@ import UIKit
 protocol ListDisplayLogic: class
 {
   func displaySomething(viewModel: List.Something.ViewModel)
+    func displayText(text: String)
 }
 
 class ListViewController: UIViewController, ListDisplayLogic
 {
+    
+  @IBOutlet weak var ListLabel: UILabel!
+    
   var interactor: ListBusinessLogic?
   var router: (NSObjectProtocol & ListRoutingLogic & ListDataPassing)?
 
@@ -70,6 +74,7 @@ class ListViewController: UIViewController, ListDisplayLogic
   {
     super.viewDidLoad()
     doSomething()
+    interactor?.gettext()
   }
   
   // MARK: Do something
@@ -86,4 +91,8 @@ class ListViewController: UIViewController, ListDisplayLogic
   {
     //nameTextField.text = viewModel.name
   }
+    func displayText(text:String)
+    {
+        ListLabel.text = text
+    }
 }

@@ -15,10 +15,13 @@ import UIKit
 protocol ListPresentationLogic
 {
   func presentSomething(response: List.Something.Response)
+    func presentText(text:String)
 }
 
 class ListPresenter: ListPresentationLogic
 {
+
+    
   weak var viewController: ListDisplayLogic?
   
   // MARK: Do something
@@ -28,4 +31,8 @@ class ListPresenter: ListPresentationLogic
     let viewModel = List.Something.ViewModel()
     viewController?.displaySomething(viewModel: viewModel)
   }
+    
+    func presentText(text: String) {
+        viewController?.displayText(text:text)
+    }
 }

@@ -66,7 +66,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="List"/>
                                 <connections>
-                                    <segue destination="mvb-Tm-7f5" kind="presentation" modalPresentationStyle="fullScreen" id="uNJ-YK-fYc"/>
+                                    <segue destination="mvb-Tm-7f5" kind="presentation" identifier="ListViewController" modalPresentationStyle="fullScreen" id="qDH-E4-HKI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbq-dd-4ZY">
-                                <rect key="frame" x="193" y="438" width="28" height="21"/>
+                                <rect key="frame" x="147" y="438" width="161" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -101,10 +101,13 @@
                         <viewLayoutGuide key="safeArea" id="5ZR-dP-mpr"/>
                     </view>
                     <navigationItem key="navigationItem" id="hLU-rT-2BS"/>
+                    <connections>
+                        <outlet property="ListLabel" destination="bbq-dd-4ZY" id="wQD-c9-2Ej"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufa-SB-IeF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="102"/>
+            <point key="canvasLocation" x="1079.7101449275362" y="101.78571428571428"/>
         </scene>
     </scenes>
 </document>
