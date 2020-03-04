@@ -62,13 +62,21 @@ class HomeViewController: UIViewController, HomeDisplayLogic
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?)
   {
+    print(segue.identifier)
+    if segue.identifier! == "ToProfile"{
+        print("routeToProfile")
+    } else if segue.identifier! == "ListViewController"{
+            router?.routeToList(segue: segue)
+
+        
+    }
 //    if let scene = segue.identifier {
 //      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+//        print(selector)
 //      if let router = router, router.responds(to: selector) {
 //        router.perform(selector, with: segue)
 //      }
 //    }
-    router?.routeToList(segue: segue)
   }
   
   // MARK: View lifecycle
@@ -110,3 +118,5 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     
     
 }
+
+ 

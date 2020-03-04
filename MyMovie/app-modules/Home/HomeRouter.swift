@@ -31,6 +31,7 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing
   
   func routeToList(segue: UIStoryboardSegue?)
   {
+    print("route")
     if let segue = segue {
       let destinationVC = segue.destination as! ListViewController
       var destinationDS = destinationVC.router!.dataStore!
@@ -57,4 +58,7 @@ class HomeRouter: NSObject, HomeRoutingLogic, HomeDataPassing
   {
     destination.name = source.name
   }
+//     func perform(_ aSelector: Selector!, with object: Any!) -> Unmanaged<AnyObject>!
+
 }
+
