@@ -29,7 +29,7 @@
         <!--Cinema-->
         <scene sceneID="gud-gL-5I8">
             <objects>
-                <viewController id="Tsy-XC-OJL" sceneMemberID="viewController">
+                <viewController id="Tsy-XC-OJL" customClass="CinemaViewController" customModule="MyMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q6R-MO-FQW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +54,7 @@
         <!--Live-->
         <scene sceneID="wRZ-Jv-d7i">
             <objects>
-                <viewController id="kkK-wb-L2L" sceneMemberID="viewController">
+                <viewController id="kkK-wb-L2L" customClass="LiveViewController" customModule="MyMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sXe-Lc-pMl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--Reward-->
         <scene sceneID="l3j-pM-uKr">
             <objects>
-                <viewController id="37x-AQ-vFz" sceneMemberID="viewController">
+                <viewController id="37x-AQ-vFz" customClass="RewardViewController" customModule="MyMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zZM-qv-kfN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,7 +104,7 @@
         <!--Profile-->
         <scene sceneID="RQV-GD-HsI">
             <objects>
-                <viewController id="ihJ-qs-B2N" sceneMemberID="viewController">
+                <viewController id="ihJ-qs-B2N" customClass="ProfileViewController" customModule="MyMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eej-1r-yPU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1988" y="-309"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie View Controller-->
         <scene sceneID="T3w-pf-Sr2">
             <objects>
-                <viewController id="KCA-kL-CNE" sceneMemberID="viewController">
+                <viewController id="KCA-kL-CNE" customClass="MovieViewController" customModule="MyMovie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vda-Xv-rza">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
