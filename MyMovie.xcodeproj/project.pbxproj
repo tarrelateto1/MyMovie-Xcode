@@ -19,7 +19,9 @@
 		576B50CB23FFC4470023C2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B50C923FFC4470023C2AF /* LaunchScreen.storyboard */; };
 		576B50D623FFC4470023C2AF /* MyMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B50D523FFC4470023C2AF /* MyMovieTests.swift */; };
 		576B50E123FFC4470023C2AF /* MyMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B50E023FFC4470023C2AF /* MyMovieUITests.swift */; };
-		57836E8B2415E68D005EBBDE /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57836E8A2415E68D005EBBDE /* DataCollectionViewCell.swift */; };
+		57836E8E241695D4005EBBDE /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57836E8C241695D4005EBBDE /* DataCollectionViewCell.swift */; };
+		57836E8F241695D4005EBBDE /* DataCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57836E8D241695D4005EBBDE /* DataCollectionViewCell.xib */; };
+		57836E91241699B5005EBBDE /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57836E90241699B5005EBBDE /* UPCarouselFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +60,9 @@
 		576B50DC23FFC4470023C2AF /* MyMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		576B50E023FFC4470023C2AF /* MyMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieUITests.swift; sourceTree = "<group>"; };
 		576B50E223FFC4470023C2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57836E8A2415E68D005EBBDE /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		57836E8C241695D4005EBBDE /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		57836E8D241695D4005EBBDE /* DataCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCollectionViewCell.xib; sourceTree = "<group>"; };
+		57836E90241699B5005EBBDE /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 		572CAC022410035000371FBC /* movies */ = {
 			isa = PBXGroup;
 			children = (
+				57836E90241699B5005EBBDE /* UPCarouselFlowLayout.swift */,
 				576B50C223FFC4400023C2AF /* MovieViewController.swift */,
-				57836E8A2415E68D005EBBDE /* DataCollectionViewCell.swift */,
+				57836E8C241695D4005EBBDE /* DataCollectionViewCell.swift */,
+				57836E8D241695D4005EBBDE /* DataCollectionViewCell.xib */,
 			);
 			path = movies;
 			sourceTree = "<group>";
@@ -319,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57836E8F241695D4005EBBDE /* DataCollectionViewCell.xib in Resources */,
 				576B50CB23FFC4470023C2AF /* LaunchScreen.storyboard in Resources */,
 				576B50C823FFC4470023C2AF /* Assets.xcassets in Resources */,
 				576B50C623FFC4400023C2AF /* Main.storyboard in Resources */,
@@ -346,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57836E8B2415E68D005EBBDE /* DataCollectionViewCell.swift in Sources */,
+				57836E8E241695D4005EBBDE /* DataCollectionViewCell.swift in Sources */,
 				576B50C323FFC4400023C2AF /* MovieViewController.swift in Sources */,
 				572CAC082410056C00371FBC /* CinemaViewController.swift in Sources */,
 				576B50BF23FFC4400023C2AF /* AppDelegate.swift in Sources */,
@@ -354,6 +361,7 @@
 				572CAC0E241005D900371FBC /* ProfileViewController.swift in Sources */,
 				572CAC0A2410057E00371FBC /* LiveViewController.swift in Sources */,
 				572CAC0C241005CE00371FBC /* RewardViewController.swift in Sources */,
+				57836E91241699B5005EBBDE /* UPCarouselFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

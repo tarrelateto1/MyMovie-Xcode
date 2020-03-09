@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DataCollectionViewCell" customModule="MyMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="266"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="266"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXp-pa-Tov">
+                        <rect key="frame" x="10" y="10" width="195" height="246"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexandra Daddario" translatesAutoresizingMaskIntoConstraints="NO" id="FkU-Nd-GPt">
+                                <rect key="frame" x="16" y="14" width="166" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="R97-Jk-koe"/>
+                                    <constraint firstAttribute="height" constant="123" id="Yvz-Qk-AgN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPU-c9-5fI">
+                                <rect key="frame" x="20" y="162" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmo-Ym-9Jh">
+                                <rect key="frame" x="20" y="198" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YPU-c9-5fI" secondAttribute="trailing" constant="20" symbolic="YES" id="2vV-ve-g7D"/>
+                            <constraint firstItem="lmo-Ym-9Jh" firstAttribute="top" secondItem="YPU-c9-5fI" secondAttribute="bottom" constant="15" id="3qQ-5c-saB"/>
+                            <constraint firstItem="YPU-c9-5fI" firstAttribute="leading" secondItem="tXp-pa-Tov" secondAttribute="leading" constant="20" symbolic="YES" id="Olw-bg-Muz"/>
+                            <constraint firstAttribute="trailing" secondItem="lmo-Ym-9Jh" secondAttribute="trailing" constant="20" symbolic="YES" id="ZBE-lj-rxf"/>
+                            <constraint firstItem="YPU-c9-5fI" firstAttribute="top" secondItem="FkU-Nd-GPt" secondAttribute="bottom" constant="25" id="akI-QN-djK"/>
+                            <constraint firstItem="FkU-Nd-GPt" firstAttribute="leading" secondItem="tXp-pa-Tov" secondAttribute="leading" constant="16" id="e9y-PH-quv"/>
+                            <constraint firstItem="FkU-Nd-GPt" firstAttribute="top" secondItem="tXp-pa-Tov" secondAttribute="top" constant="14" id="fek-9c-ew5"/>
+                            <constraint firstItem="lmo-Ym-9Jh" firstAttribute="leading" secondItem="tXp-pa-Tov" secondAttribute="leading" constant="20" symbolic="YES" id="gXA-SS-153"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tXp-pa-Tov" secondAttribute="bottom" constant="10" id="4SS-dV-GyH"/>
+                <constraint firstItem="tXp-pa-Tov" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="AjL-yW-XVS"/>
+                <constraint firstItem="tXp-pa-Tov" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ukr-Ta-7Sj"/>
+                <constraint firstAttribute="trailing" secondItem="tXp-pa-Tov" secondAttribute="trailing" constant="10" id="vqi-ge-Q4c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="215" height="266"/>
+            <connections>
+                <outlet property="cntView" destination="tXp-pa-Tov" id="7ZK-Yn-ian"/>
+                <outlet property="image" destination="FkU-Nd-GPt" id="ooh-Vj-TpB"/>
+                <outlet property="lblSubTitle" destination="lmo-Ym-9Jh" id="odr-H5-m07"/>
+                <outlet property="lblTitle" destination="YPU-c9-5fI" id="Eot-Rg-DNz"/>
+            </connections>
+            <point key="canvasLocation" x="258.69565217391306" y="182.8125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Alexandra Daddario" width="728" height="364"/>
+    </resources>
+</document>
