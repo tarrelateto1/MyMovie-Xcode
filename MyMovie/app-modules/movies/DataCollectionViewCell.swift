@@ -19,7 +19,6 @@ class DataCollectionViewCell: UICollectionViewCell {
         // Initialization code
         DispatchQueue.main.async {
             self.cntView.layer.shadowColor = UIColor.gray.cgColor
-            self.cntView.layer.shadowOpacity = 0.5
             self.cntView.layer.shadowOpacity = 10.5
             self.cntView.layer.shadowOffset = .zero
             self.cntView.layer.shadowPath = UIBezierPath(rect:self.cntView.bounds).cgPath

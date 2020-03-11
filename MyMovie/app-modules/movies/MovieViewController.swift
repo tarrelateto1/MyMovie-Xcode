@@ -16,11 +16,11 @@ class MovieViewController: UIViewController {
         // Do any additional setup after loading the view.
         collectionView.register(UINib.init(nibName: "DataCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "dataIdentifierB")
         let floawLayout = UPCarouselFlowLayout()
-        floawLayout.itemSize = CGSize(width:UIScreen.main.bounds.size.width - 60.0,height:collectionView.frame.size.height)
+        floawLayout.itemSize = CGSize(width:UIScreen.main.bounds.size.width - 250.0,height:collectionView.frame.size.height - 30.0)
         floawLayout.scrollDirection = .horizontal
-        floawLayout.sideItemScale = 0.8
+        floawLayout.sideItemScale = 0.9
         floawLayout.sideItemAlpha = 1.0
-        floawLayout.spacingMode = .fixed(spacing: 5.0)
+        floawLayout.spacingMode = .fixed(spacing: 50.0)
         collectionView.collectionViewLayout = floawLayout
    
         
