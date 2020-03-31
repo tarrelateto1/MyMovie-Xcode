@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,38 +19,16 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXp-pa-Tov">
                         <rect key="frame" x="10" y="10" width="150" height="146"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPU-c9-5fI">
-                                <rect key="frame" x="12" y="84" width="126" height="7.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="6"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmo-Ym-9Jh">
-                                <rect key="frame" x="12" y="107" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="6"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexandra Daddario" translatesAutoresizingMaskIntoConstraints="NO" id="FkU-Nd-GPt">
-                                <rect key="frame" x="20" y="12" width="114" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="McC-P6-NGO"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joker" translatesAutoresizingMaskIntoConstraints="NO" id="P7s-Vh-exC">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="146"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="FkU-Nd-GPt" firstAttribute="top" secondItem="tXp-pa-Tov" secondAttribute="top" constant="14" id="0Yc-uJ-fXJ"/>
-                            <constraint firstItem="FkU-Nd-GPt" firstAttribute="leading" secondItem="tXp-pa-Tov" secondAttribute="leading" constant="16" id="6l5-g2-kpF"/>
-                            <constraint firstItem="FkU-Nd-GPt" firstAttribute="leading" secondItem="tXp-pa-Tov" secondAttribute="leading" constant="20" id="8tu-xv-Idu"/>
-                            <constraint firstAttribute="trailing" secondItem="lmo-Ym-9Jh" secondAttribute="trailing" constant="12" id="9Oe-8s-sum"/>
-                            <constraint firstAttribute="trailing" secondItem="YPU-c9-5fI" secondAttribute="trailing" constant="12" id="9XU-4N-6yl"/>
-                            <constraint firstItem="YPU-c9-5fI" firstAttribute="top" secondItem="FkU-Nd-GPt" secondAttribute="bottom" constant="45" id="dxF-Zk-dwU"/>
-                            <constraint firstItem="FkU-Nd-GPt" firstAttribute="top" secondItem="tXp-pa-Tov" secondAttribute="top" constant="12" id="i5N-xo-44X"/>
-                            <constraint firstAttribute="trailing" secondItem="FkU-Nd-GPt" secondAttribute="trailing" constant="20" id="nkB-nq-Qql"/>
-                            <constraint firstItem="YPU-c9-5fI" firstAttribute="leading" secondItem="tXp-pa-Tov" secondAttribute="leading" constant="12" id="nv4-3j-KYr"/>
-                            <constraint firstAttribute="trailing" secondItem="FkU-Nd-GPt" secondAttribute="trailing" constant="16" id="qRM-iW-QhP"/>
-                            <constraint firstItem="lmo-Ym-9Jh" firstAttribute="leading" secondItem="tXp-pa-Tov" secondAttribute="leading" constant="12" id="viq-BF-Rt3"/>
+                            <constraint firstAttribute="bottom" secondItem="P7s-Vh-exC" secondAttribute="bottom" id="Cam-b5-ODO"/>
+                            <constraint firstAttribute="trailing" secondItem="P7s-Vh-exC" secondAttribute="trailing" id="KzZ-BY-seU"/>
+                            <constraint firstItem="P7s-Vh-exC" firstAttribute="top" secondItem="tXp-pa-Tov" secondAttribute="top" id="bgT-X9-gW9"/>
+                            <constraint firstItem="P7s-Vh-exC" firstAttribute="leading" secondItem="tXp-pa-Tov" secondAttribute="leading" id="duQ-6y-wag"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -65,14 +43,11 @@
             <size key="customSize" width="170" height="166"/>
             <connections>
                 <outlet property="cntView" destination="tXp-pa-Tov" id="7ZK-Yn-ian"/>
-                <outlet property="image" destination="FkU-Nd-GPt" id="ooh-Vj-TpB"/>
-                <outlet property="lblSubTitle" destination="lmo-Ym-9Jh" id="odr-H5-m07"/>
-                <outlet property="lblTitle" destination="YPU-c9-5fI" id="Eot-Rg-DNz"/>
             </connections>
             <point key="canvasLocation" x="226.08695652173915" y="149.33035714285714"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Alexandra Daddario" width="728" height="364"/>
+        <image name="joker" width="841" height="1222"/>
     </resources>
 </document>
