@@ -43,6 +43,7 @@
             <size key="customSize" width="170" height="166"/>
             <connections>
                 <outlet property="cntView" destination="tXp-pa-Tov" id="7ZK-Yn-ian"/>
+                <outlet property="image" destination="P7s-Vh-exC" id="24R-MK-kaW"/>
             </connections>
             <point key="canvasLocation" x="226.08695652173915" y="149.33035714285714"/>
         </collectionViewCell>

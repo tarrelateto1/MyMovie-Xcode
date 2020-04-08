@@ -12,8 +12,6 @@ class DataCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var cntView: UIView!
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblSubTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,5 +24,19 @@ class DataCollectionViewCell: UICollectionViewCell {
             
         }
     }
+    
 
+}
+extension UIImageView{
+    func load(url:URL){
+        DispatchQueue.global().async{[weak self]in
+            if let data = try? Data(contentsOf:url){
+                if let image = UIImage(data:data){
+                    DispatchQueue.main.async{
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }
